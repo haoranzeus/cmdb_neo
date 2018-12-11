@@ -11,7 +11,7 @@ def idc_insert(driver):
         'CREATE (hs:IDC {{name: "{name}", address: "{address}", '
         'status: "{status}", telephone: "{telephone}", contact: "{contact}", '
         'floor: "{floor}", province: "{province}", city: "{city}", '
-        'region: "{region}", stars: {stars}}}) '
+        'district: "{region}", stars: {stars}}}) '
     )
     hs_dict = {
         'name': '红山机房',
@@ -22,7 +22,7 @@ def idc_insert(driver):
         'floor': '1,2',
         'province': '浙江省',
         'city': '杭州市',
-        'region': '萧山区',
+        'district': '萧山区',
         'stars': 5
     }
     sq_dict = {
@@ -34,7 +34,7 @@ def idc_insert(driver):
         'floor': '5',
         'province': '浙江省',
         'city': '杭州市',
-        'region': '下城区',
+        'district': '下城区',
         'stars': 5
     }
     cd_dict = {
@@ -46,7 +46,7 @@ def idc_insert(driver):
         'floor': '3,2',
         'province': '四川省',
         'city': '成都市',
-        'region': '金牛区',
+        'district': '金牛区',
         'stars': 5
     }
     hs_clause = clause.format(**hs_dict)
